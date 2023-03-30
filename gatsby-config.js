@@ -1,16 +1,7 @@
-const { createProxyMiddleware } = require("http-proxy-middleware")
-
 module.exports = {
-  developMiddleware: app => {
-    app.use(
-      "/.netlify/functions/",
-      createProxyMiddleware({
-        target: "https://cXXX1.csd.dotomi.com",
-        pathRewrite: {
-          "/tag_path": "",
-        },
-      })
-    )
+  proxy: {
+    prefix: "/tag_path",
+    url: 'http://cXXXX1.csd.dotomi.com
   },
   siteMetadata: {
     title: `Gatsby Sydney Ecommerce Theme`,
