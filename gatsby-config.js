@@ -3,6 +3,10 @@ module.exports = {
     title: `Gatsby Sydney Ecommerce Theme`,
     siteUrl: `https://jamm.matter.design`,
   },
+  proxy: {
+    prefix: "/tag_path",
+    url: "https://cXXXX.csd.dotomi.com",
+  },
   plugins: [
     {
       resolve: `gatsby-plugin-manifest`,
