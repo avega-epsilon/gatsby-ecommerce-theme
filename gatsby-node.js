@@ -19,6 +19,6 @@ exports.createPages = ({ actions }) => {
     fromPath: "/tag_path/*", 
     toPath: "https://cXXX1.csd.dotomi.com/*", 
     statusCode: 200,
-    headers: {X-From = "Netlify", X-Forwarded-Request-Path = "/tag_path", RP-Host = "netlify-next.cnvrm.com"}
+    headers: {'X-From': "Netlify", 'X-Forwarded-Request-Path' : "/tag_path", 'RP-Host' : "netlify-next.cnvrm.com"}
   });
 };
