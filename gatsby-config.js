@@ -1,8 +1,4 @@
 module.exports = {
-  proxy: {
-    prefix: "/tag_path",
-    url: "http://cXXXX1.csd.dotomi.com",
-  },
   siteMetadata: {
     title: `Gatsby Sydney Ecommerce Theme`,
     siteUrl: `https://jamm.matter.design`,
