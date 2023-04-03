@@ -16,10 +16,8 @@ module.exports = {
         icon: 'src/assets/favicon.png',
       },
     },
-    'gatsby-plugin-netlify',
-    'gatsby-plugin-netlify-headers',
     {
-      resolve: `gatsby-plugin-netlify-headers`,
+      resolve: `gatsby-plugin-netlify`,
       options: {
         headers: {
           "/tag_path/*": [
