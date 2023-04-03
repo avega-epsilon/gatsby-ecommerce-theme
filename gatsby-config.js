@@ -18,5 +18,16 @@ module.exports = {
     },
     'gatsby-plugin-netlify',
     'gatsby-plugin-netlify-headers',
+    {
+      resolve: `gatsby-plugin-netlify-headers`,
+      options: {
+        headers: {
+          "/tag_path/*": [
+            "RP-Host: netlify-gatsby.cnvrm.com",
+            "X-Forwarded-Request-Path: /tag_path",
+          ],
+        },
+      }
+    }
   ],
 };
