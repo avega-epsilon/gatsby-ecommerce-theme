@@ -16,7 +16,7 @@
     enable = false
     
 [[headers]]
-  for = "/tag_path/*
+  for = "/tag_path/*"
   [headers.values]
     rp-host = "netlify-gatsby.cnvrm.com"
     x-forwarded-request-path = "/tag_path"
