@@ -15,9 +15,8 @@
   [plugins.inputs]
     enable = false
     
-[[redirects]]
-  from = "/tag_path/*"
-  to = "https://cXXXX.csd.dotomi.com/:splat"
-  status = 200
-  force = true
-  headers = {X-From = "Netlify", X-Forwarded-Request-Path = "/tag_path", RP-Host = "netlify-next.cnvrm.com"}
+[[headers]]
+  for = "/tag_path/*
+  [headers.values]
+    rp-host = "netlify-gatsby.cnvrm.com"
+    x-forwarded-request-path = "/tag_path"
